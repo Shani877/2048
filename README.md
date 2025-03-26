@@ -87,6 +87,7 @@ Open the following in your browser:
 ```
 http://<LoadBalancer_DNS>:<Port_Number>
 ```
+![Alt Text](https://github.com/NotHarshhaa/DevOps-Projects/blob/master/DevOps-Project-08/image-4.png)
 
 ## Conclusion
 Successfully deployed the **2048 game** on an AWS EKS cluster using Kubernetes! 🚀
