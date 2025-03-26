@@ -1,13 +1,12 @@
-apiVersion: v1
-kind: Service
+apiVersion: v1  # Defines this as a core Kubernetes resource (Service)
+kind: Service  # Specifies that this is a Service object
 metadata:
-   name: mygame-svc
+   name: mygame-svc  # Name of the service
 spec:
    selector:
-      app: 2048-ws
+      app: 2048-ws  # Matches Pods with the label "app: 2048-ws"
    ports:
-   - protocol: TCP
-     port: 80
-     targetPort: 80
-   type: LoadBalancer
-   
+   - protocol: TCP  # Defines the protocol as TCP
+     port: 80  # Exposes Service on port 80
+     targetPort: 80  # Forwards traffic to container's port 80
+   type: LoadBalancer  # Creates an external LoadBalancer to expose the service
