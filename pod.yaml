@@ -1,0 +1,12 @@
+apiVersion: v1  # API version for Kubernetes core resources
+kind: Pod  # Defining a Pod resource
+metadata:
+   name: 2048-pod  # Name of the Pod
+   labels:
+      app: 2048-ws  # Label to identify the Pod
+spec:
+   containers:
+   - name: 2048-container  # Name of the container inside the Pod
+     image: blackicebird/2048  # Docker image to use for the container
+     ports:
+       - containerPort: 80  # Exposing container's port 80
